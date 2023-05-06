@@ -1,0 +1,11 @@
+<div id="DisplayDetails" >
+    <div class="contact-name">{{contacts[id-1].contactName}}
+    <a [routerLink]="['/contact', 'details', id, 'edit']" class="edit-text"><span  ><img src="assets/edit1.jpg" alt="" class="edit-img">Edit</span></a>
+        <span class="delete-text" (click)="deleteContact()"><img src="assets/delete2.png" alt="" class="delete-img">Delete</span>
+    </div>
+    <div class="form-details">Email: {{contacts[id-1].contactEmail}}</div>
+    <div class="form-details">Mobile: {{contacts[id-1].contactMobile}}</div>
+    <div class="form-details">Landline: {{contacts[id-1].contactLandline}}</div>
+    <div class="form-details">Website: {{contacts[id-1].contactWebsite}}</div>
+    <div class="form-details">Address: {{contacts[id-1].contactAddress}}</div>
+</div>
